@@ -1,0 +1,63 @@
+//taxonomy pages from a view
+.page-taxonomy-term {
+  article {
+    margin-bottom: 30px;
+    overflow: hidden;
+    position: relative;
+    padding: 40px 20px 20px 20px !important;
+    z-index: 0;
+  }
+}
+
+//the front page view
+.view-frontpage {
+  .views-row {
+    overflow: hidden;
+    position: relative;
+    padding: 40px 20px 20px 20px !important;
+    z-index: 0;
+  }
+}
+.view-articles-referencing-a-section-of-the-program {
+  .views-row {
+    overflow:hidden;
+    margin-bottom: 30px;
+    padding: 40px 0 20px 0;
+  }
+  
+}
+//the exposed form for the sorting of posts
+.form-item-sort-by {
+  display:none;
+}
+
+.form-item-sort-order label {
+  display:none;
+}
+.form-item-items-per-page label{
+  display: inline-block;
+  float: left;
+  padding: 10px;
+  color: $light;
+  background: $highlight;
+  margin: 3px;
+}
+select#edit-items-per-page {
+  padding: 6px;
+  margin-top: 2px;
+  cursor: pointer;
+}
+
+.views-exposed-form .form-item {
+  float:left;
+  a {
+    display:block;
+    padding: 10px;
+    color: $light;
+    background: $highlight;
+    margin: 3px;
+  }
+}
+.views-exposed-widget.views-widget-sort-order {
+  margin: 0 0 20px 0;
+}

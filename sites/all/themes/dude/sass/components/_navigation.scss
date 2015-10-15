@@ -1,0 +1,112 @@
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+/* unvisited link */
+a:link {
+color: $a-link;
+}
+
+/* visited link */
+a:visited {
+color: $a-visited;
+}
+
+/* mouse over link */
+a:hover {
+color: $a-hover;
+}
+
+/* selected link */
+a:active {
+color: $a-active;
+}
+
+a.open, a.close {
+  font-size: 1.6em;
+  display:block;
+  padding: 10px;
+  margin: 20px 0;
+  color: $highlight;
+}
+
+
+.main-nav {
+  @include breakpoint($tablet, true) {
+    margin-bottom: 30px;
+  }
+  .menu-button {
+    cursor: pointer;
+    font-style: normal;
+    font-weight: normal;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.6em;
+    color: $dark;
+    margin: 0;
+    text-align: right;
+    padding: 10px;
+    
+    @include breakpoint($tablet, true) {
+      display:none;
+    }
+  }
+  ul.menu {
+    display:none;
+    @include breakpoint($tablet, true) {
+      border-top: 1px solid $medium;
+      display:block;
+    }
+
+    li {
+      list-style-type:none;
+      list-style-image:none;
+      
+      ul {
+        li {
+          padding-left: 20px;
+          font-size: 1em;
+          
+          a {
+            color: $med-light;
+          }
+          
+        }
+      }
+      
+      a {
+        display:block;
+        padding: 20px 10px;
+        border-bottom: 1px solid $highlight;
+      }
+    }
+  }
+  ul.menu.open {
+    border-top: 1px solid $medium;
+    width: 100%;
+    position: absolute;
+    z-index: 999;
+    background: $light;
+    display:block;
+  }
+}
+.pager {
+  padding: 10px;
+  margin: 40px 0px;
+}
+.pager li.pager-current {
+  color: $light;
+  background: $highlight;
+  padding: 10px 20px;
+}
+.pager li {
+  display:inline;
+
+  a {
+    color: $light;
+    background: $highlight;
+    padding: 10px 20px;
+  }
+}
+#block-block-4 {
+  margin-top: 50px;
+}

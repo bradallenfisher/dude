@@ -1,0 +1,12 @@
+<?php
+
+/**
+ * Implements hook_preprocess_page().
+ */
+function dude_preprocess_page(&$variables) {
+  // You can use preprocess hooks to modify the variables before they are passed
+  // to the theme function or template file.
+  drupal_add_css('//fonts.googleapis.com/css?family=Roboto:400,100', array('group' => CSS_THEME));
+  drupal_add_css('//fonts.googleapis.com/css?family=Roboto+Slab:400,300', array('group' => CSS_THEME));
+  
+}
