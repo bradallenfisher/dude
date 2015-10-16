@@ -1,0 +1,10 @@
+.header {
+  border-bottom: 1px solid $highlight;
+  margin-bottom: 20px;
+  overflow: hidden;
+
+  .title {
+    float: left;
+    padding: 10px;
+  }
+}

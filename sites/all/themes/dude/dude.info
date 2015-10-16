@@ -8,7 +8,6 @@ core = 7.x
 ; ========================================
 ; Stylesheets
 ; ========================================
-stylesheets[all][] = css/dude.normalize.css
 stylesheets[all][] = css/dude.hacks.css
 stylesheets[all][] = css/dude.styles.css
 stylesheets[all][] = css/dude.no-query.css
@@ -18,18 +17,14 @@ stylesheets[all][] = css/font-awesome.min.css
 ; Scripts
 ; ========================================
 scripts[] = js/dude.behaviors.js
-scripts[] = js/menu.min.js
+scripts[] = js/scripts.min.js
 
 ; ========================================
 ; Regions
 ; ========================================
-regions[logo] = Logo
-regions[menu_button] = Menu Button
-regions[navigation] = Navigation
-regions[search] = Search
+regions[menu] = Menu
 regions[content] = Content
-regions[sidebar_first] = First Sidebar
-regions[sidebar_second] = Second Sidebar
+regions[side] = Side
 regions[footer] = Footer
 
 ; ========================================

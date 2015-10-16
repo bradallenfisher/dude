@@ -1,13 +1,7 @@
 body {
   font-family: 'Roboto', sans-serif;
-  font-weight: 300;
 }
-h1 {
-  margin-bottom: 20px;
-  @include fittext($min-media: 360px, $max-media: 1400px, $min-font-size: 1.5em, $max-font-size: 3em, $media-increment: 50, $font-increment: .1, $ratio: 1, $round: false);
-  font-weight: 100;
-  text-transform: uppercase;
-}
+
 h1.site-name {
   margin-bottom: 0;
   font-size: 1.45em !important;
@@ -15,6 +9,8 @@ h1.site-name {
     color: $med-light;
   }
 }
+
+
 h1.front-title {
   font-size: 1.1em;
   line-height: 1.5;
@@ -29,16 +25,8 @@ h1.front-title {
   @include breakpoint($tablet, true){
     font-size: 4em;
   }
-
-
-
-
 }
-h2, caption {
-  @include fittext($min-media: 360px, $max-media: 1400px, $min-font-size: 1.5em, $max-font-size: 3em, $media-increment: 50, $font-increment: .1, $ratio: 1, $round: false);
-  margin-bottom: 20px;
-  line-height: 1.5;
-}
+
 h2.site-slogan {
   font-size: 1.45em;
   font-weight: 100;
