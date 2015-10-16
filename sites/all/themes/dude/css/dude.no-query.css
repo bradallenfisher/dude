@@ -334,39 +334,6 @@ ul.menu {
   display: none;
 }
 
-a {
-  text-decoration: none;
-  cursor: pointer;
-}
-
-/* unvisited link */
-a:link {
-  color: #0754A8;
-}
-
-/* visited link */
-a:visited {
-  color: #004A95;
-}
-
-/* mouse over link */
-a:hover {
-  color: #555;
-}
-
-/* selected link */
-a:active {
-  color: #555;
-}
-
-a.open, a.close {
-  font-size: 1.6em;
-  display: block;
-  padding: 10px;
-  margin: 20px 0;
-  color: #0754A8;
-}
-
 .main-nav {
   margin-bottom: 30px;
 }
@@ -396,7 +363,7 @@ a.open, a.close {
   font-size: 1em;
 }
 .main-nav ul.menu li ul li a {
-  color: #999999;
+  color: #ffffff;
 }
 .main-nav ul.menu li a {
   display: block;
