@@ -16,7 +16,9 @@
     <div class="content" role="main">
 
       <a id="main-content"></a>
+      <?php if(!$is_front):?>
       <h1><?php print $title;?></h1>
+      <?php endif;?>
       <?php print render($page['content']); ?>
 
     </div>
